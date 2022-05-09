@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Splash">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/runner_splash"
+        app:lottie_scale="20"/>
+
+    <TextView
+        android:id="@+id/splash_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:text="welcome"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/splash_txt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="To" android:layout_below="@+id/splash_txt1" android:layout_centerHorizontal="true" android:fontFamily="casual" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <ImageView android:id="@+id/splash_txt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:src="@drawable/fitshow" android:layout_below="@+id/splash_txt2" android:layout_centerHorizontal="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+</RelativeLayout>

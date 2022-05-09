@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin">
+
+    <Toolbar android:theme="?attr/actionBarTheme" android:id="@+id/toolbar" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LOGIN" android:textAlignment="center"/>
+    </Toolbar>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/layout_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:weightSum="6" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+                <EditText android:textSize="14sp" android:textColorHint="#606060" android:id="@+id/email" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ایمیل/شماره تلفن" android:drawableLeft="@drawable/ic_mail_outline_black_24dp" android:drawablePadding="10dp" android:inputType="textEmailAddress" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                <EditText android:textSize="14sp" android:textColorHint="#606060" android:gravity="right" android:id="@+id/password" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="پسورد" android:drawableLeft="@drawable/ic_lock_outline_black_24dp" android:drawablePadding="10dp" android:inputType="textPassword" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                <CheckBox android:id="@+id/checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="20dp" android:layout_marginRight="30dp" android:text="من را به خاطر داشته باش"/>
+                <ImageButton android:layout_gravity="end" android:id="@+id/signin" android:background="@drawable/button_background" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="50dp" android:src="@drawable/ic_arrow_forward_black_24dp" android:layout_marginEnd="25dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+                <TextView android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="حساب کاربری ندارم" android:textAlignment="center"/>
+                <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/signup" android:background="@drawable/button_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp" android:text="ورود"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

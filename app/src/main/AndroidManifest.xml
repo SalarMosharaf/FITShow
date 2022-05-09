@@ -14,11 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.holisticTracking">
-        <activity android:name="com.lite.holistic_tracking.holistic_activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity android:name="com.lite.holistic_tracking.signup" android:exported="true"/>
+        <activity android:name="com.lite.holistic_tracking.Direction_Activity" android:exported="true"/>
+        <activity android:name="com.lite.holistic_tracking.signin" android:exported="true"/>
+        <activity android:name="com.lite.holistic_tracking.holistic_activity"/>
+
+        <activity android:name="com.lite.holistic_tracking.Splash" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 

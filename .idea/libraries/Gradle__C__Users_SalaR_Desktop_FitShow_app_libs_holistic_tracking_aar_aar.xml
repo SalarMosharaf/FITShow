@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: C./Users/SalaR/Desktop/FitShow/app/libs/holistic_tracking_aar.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7bab375e9b3a2f3ea0af68b7ba72dd45/transformed/jetified-holistic_tracking_aar/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7bab375e9b3a2f3ea0af68b7ba72dd45/transformed/jetified-holistic_tracking_aar/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7bab375e9b3a2f3ea0af68b7ba72dd45/transformed/jetified-holistic_tracking_aar/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
